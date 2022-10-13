@@ -236,14 +236,17 @@ fieldset{
     }
         
     textarea{
-        border: 1px solid gray;
         resize: none;
         margin: 1.2rem;
         border-radius: 1rem;
         padding: 10px;
         width: 80%;
-        background-color: gray;
-        border: 1px solid black;
+        background-color: black;
+        color: white;
+        border: 2px solid yellow;
+        outline: 0;
+        font-size: 1.1em;
+        
     }
 
     a{
@@ -428,3 +431,9 @@ export const TituloHome = styled.h1`
     }
     
 `
+
+export const TituloSuporte = styled.h1`
+    text-align: center;
+    margin-top: 15vh;
+`
+

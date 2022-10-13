@@ -1,6 +1,6 @@
 import Menu from "./../../components/geral/Menu";
 
-import { Form } from "../../styled";
+import { Form, TituloSuporte } from "../../styled";
 import { useState } from "react";
 
 export default function Suporte() {
@@ -18,6 +18,7 @@ export default function Suporte() {
   return (
     <>
       <Menu />
+      <TituloSuporte>Entre em contato com a gente, aceitamos sua sugestão!</TituloSuporte>
       <Form action="Suporte" method="get">
         <fieldset>
           <label htmlFor="idNome">Nome Completo</label>
