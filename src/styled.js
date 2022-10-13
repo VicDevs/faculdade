@@ -235,6 +235,7 @@ fieldset{
         padding: 3px;
         transition: transform .5s, box-shadow .5s;
         background-color: black;
+
         :focus{
             outline: 0;
             transform: scale(1.1);
@@ -242,7 +243,9 @@ fieldset{
             caret-color: white;
         }
     }
+
     input[type='submit']{
+        
         padding: 8px;
         transition: all .5s;
         font-size: 1em;
@@ -251,6 +254,7 @@ fieldset{
         font-weight: bold;
         width: 50%;
         border: 2px solid yellow;
+        
         :hover{
             
             font-weight: bold;
@@ -261,6 +265,7 @@ fieldset{
     }
     
     input[type='checkbox']{
+
         margin-bottom:.7rem;
         display: flex;
         
@@ -289,10 +294,12 @@ fieldset{
         letter-spacing: 1px;
         font-weight: bold;
         font-size: 1.1em;
+        
         :hover{
             color: #67a;
         }     
     }
+
     p{
         color: white;
         margin: .7em;
@@ -321,6 +328,7 @@ fieldset{
         width: 100%;
         align-items: center;
        }
+
        label{
         margin: 0;
         align-self: center;
@@ -332,10 +340,7 @@ fieldset{
                 display: none;
             }
         }
-
-        
-    
-
+    }
    @keyframes slide2 {
     0%{
         transform: translateX(60%);
