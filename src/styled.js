@@ -62,7 +62,7 @@ export const MenuInicial = styled.nav`
 
     @media (max-width: 768px) {
         
-        width: 8%;
+        width: 10%;
         height: 100vh;
         transition: all .7s;
         position: fixed;
@@ -81,10 +81,10 @@ export const MenuInicial = styled.nav`
             :nth-child(1){
                 color: #67a;
                 margin: 0;
-                background-color: #0013;
+                background-color: #fff4;
             }
             :hover{
-                background-color: #0013;
+                background-color: #fff4;
             }
         }
         }
@@ -96,7 +96,7 @@ export const MenuInicial = styled.nav`
         }
 
         :hover{
-            width: 35%;
+            width: 40%;
             ul{
                 display: flex;
                 animation: acender .8s;
@@ -132,14 +132,44 @@ export const MenuCandidato = styled.nav`
     justify-content: space-around;
     align-items: center;
     padding: 1em;
-    background:linear-gradient(to right, #ccc, #fa0);
+    background-color: #fa0;
   }
+
 
   a{
     text-decoration: none;
     color: #000;
     font-size: 1.1rem;
     font-weight: bold;
+
+    ::after{
+        content: '';
+        position: absolute;
+        width: 1.2rem;
+        top: 2.5rem;
+        transform: translateX(-3.2rem);
+        height: 2px;
+        transition: all .6s;
+    }
+    :hover{
+        ::after{
+            width: 3.2rem;
+            background-color: #000;
+        }
+    }
+  }
+
+  @media (max-width:768px) {
+    ul{
+        flex-direction: column;
+        width: 8%;
+        height: 100vh;
+    }
+    a{
+        ::after{
+            display: none;
+        }
+    }
   }
   
 `
@@ -190,7 +220,8 @@ fieldset{
 }
     
     label{
-        align-items: center;
+        align-self: flex-start;
+        margin-left: 10vh;
         color: white;
         font-size: 1.2rem;
         padding: 6px;
@@ -219,7 +250,7 @@ fieldset{
         color: white;
         font-weight: bold;
         width: 50%;
-        border: 2px solid #062;
+        border: 2px solid yellow;
         :hover{
             
             font-weight: bold;
@@ -264,6 +295,7 @@ fieldset{
     }
     p{
         color: white;
+        margin: .7em;
 
         ::after{
             content: '';
@@ -284,20 +316,24 @@ fieldset{
     }
 
     @media (max-width:768px){
-       margin: 10vh auto;
 
        fieldset{
         width: 100%;
         align-items: center;
        }
-       
+       label{
+        margin: 0;
+        align-self: center;
        }
+       
         a{
             
             ::after{
                 display: none;
             }
         }
+
+        
     
 
    @keyframes slide2 {
@@ -398,38 +434,61 @@ export const MenuHamburguer = styled.div`
 `
 
 export const TituloHome = styled.h1`
-    margin: 15vh 0 0 15vh;
-    color: blue;
+    margin: 15vh 0 0 10vh;
+    color: black;
+    padding: 1.2em;
     font-size: 2em;
     animation: slide 2s;
-
-    ::after{
-        content: '';
-        width: 46vh;
-        height: 10px;
-        border-radius: 1em;
-        background-color: gray;
-        position: absolute;
-        transform: translate(-44vh, 3rem);
-    }
+    background: linear-gradient(to right, #3f6, white);
+    animation: open 2s;
+    border-radius:2em 2em 0 2em;
+    white-space: nowrap;
 
     @media (max-width: 768px) {
         margin: 0;
-        padding: 10px;
-        text-align: center;
+        white-space: normal;
+        margin-left: 10vh;
     }
+
+    @keyframes open {
+        0%{
+            transform: translateX(100vh);
+        }
+    }
+    
+`
+
+export const SubtituloHome = styled.h2`
+    background: linear-gradient(to left, yellow 60%, white);
+    margin: 2em 2em 0 0;
+    padding: 2em;
+    border-radius: 3em 3em 3em 0;
+    animation: slide 2s;
+    text-align: end;
+    white-space: nowrap;
 
     @keyframes slide {
         0%{
-            opacity: 0;
-            transform: translateX(-60%);
+            transform: translateX(-100vh);
         }
-        40%{
-            opacity: .5;
-        }
-        
     }
-    
+
+    @media (max-width:768px) {
+        white-space: normal;
+        margin-left: 10vh;
+    }
+`
+
+export const SubtituloHome2 = styled.h2`
+    background: linear-gradient(to right, #32f 50%, white);
+    margin:2em 0 0 2em;
+    border-radius: 3em 3em 0 3em;
+    padding: 2em;
+    animation: open 3s;
+
+    @media (max-width:768px){
+        margin-left: 10vh;
+    }
 `
 
 export const TituloSuporte = styled.h1`
@@ -437,3 +496,6 @@ export const TituloSuporte = styled.h1`
     margin-top: 15vh;
 `
 
+export const CardVaga = styled.div`
+
+`
