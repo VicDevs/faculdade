@@ -16,12 +16,12 @@ export const MenuInicial = styled.nav`
 
     li{
         display: flex;
-        padding: .8rem;
+        
         :first-child{
             font-weight: bold;
             color: #67a;
             font-size: 1.4em;
-            margin-right: 2em;
+            align-self: center;
         }
         
         span{
@@ -35,6 +35,7 @@ export const MenuInicial = styled.nav`
         font-size: 1.2em;
         color: white;
         letter-spacing: 1px;
+        padding: .7rem;
 
         ::after{
             content: '';
@@ -71,7 +72,6 @@ export const MenuInicial = styled.nav`
         ul{
             flex-direction: column;
             display: none;
-            align-items: center;
             span{
             color: white;
         }
@@ -80,7 +80,7 @@ export const MenuInicial = styled.nav`
             width: 100%;
             :nth-child(1){
                 color: #67a;
-                margin: 0;
+                padding-left: 30%;
                 background-color: #fff4;
             }
             :hover{
@@ -90,6 +90,8 @@ export const MenuInicial = styled.nav`
         }
         a{
             white-space: nowrap;
+            width: 100%;
+            margin: 0 auto;
             ::after{
                 display: none;
             }
@@ -195,8 +197,7 @@ export const Form = styled.form`
 
 width: 70%;
 margin: 5vh auto;
-box-shadow: 20px 6px 30px gray;
-border: 2px solid white;
+border: 1px solid #67a;
 border-radius: 10px;
 display: flex;
 background-color: black;
@@ -253,7 +254,7 @@ fieldset{
         color: white;
         font-weight: bold;
         width: 50%;
-        border: 2px solid yellow;
+        border: 2px solid #0f6;
         
         :hover{
             
@@ -383,8 +384,19 @@ export const ParagrafoInicial = styled.p`
 
 export const DivTextoLogin = styled.div`
     width: 40%;
-    background-color: white;
-
+    background-color: black;
+    border: 3px solid yellow;
+    border-bottom: none;
+    margin: 1em 1em 0 0;
+    border-radius: 2em 2em 0 0;
+    
+    h2{
+        margin-top: 1em;
+        padding: .7rem;
+        font-size: 2rem;
+        color: white;
+        text-align: center;
+    }
     @media (max-width:768px) {
         display: none;
     }
@@ -445,7 +457,7 @@ export const TituloHome = styled.h1`
     font-size: 2em;
     animation: slide 2s;
     background: linear-gradient(to right, #3f6, white);
-    animation: open 2s;
+    animation: open 2.5s;
     border-radius:2em 2em 0 2em;
     white-space: nowrap;
 
@@ -457,6 +469,7 @@ export const TituloHome = styled.h1`
 
     @keyframes open {
         0%{
+            opacity: 0;
             transform: translateX(100vh);
         }
     }
@@ -468,12 +481,13 @@ export const SubtituloHome = styled.h2`
     margin: 2em 2em 0 0;
     padding: 2em;
     border-radius: 3em 3em 3em 0;
-    animation: slide 2s;
+    animation: slide 2.5s;
     text-align: end;
     white-space: nowrap;
 
     @keyframes slide {
         0%{
+            opacity: 0;
             transform: translateX(-100vh);
         }
     }
@@ -489,7 +503,7 @@ export const SubtituloHome2 = styled.h2`
     margin:2em 0 0 2em;
     border-radius: 3em 3em 0 3em;
     padding: 2em;
-    animation: open 3s;
+    animation: open 2.5s;
 
     @media (max-width:768px){
         margin-left: 10vh;
@@ -499,7 +513,37 @@ export const SubtituloHome2 = styled.h2`
 export const TituloSuporte = styled.h1`
     text-align: center;
     margin-top: 15vh;
+    animation: pop infinite;
 `
+
+export const SpanLogin1 = styled.span`
+    color: #67a;
+    display: block;
+    font-size: 2.4rem;
+    margin:.7rem 0;
+    animation: pop 2s linear infinite;
+
+    @keyframes pop {
+        50%{
+            transform: scale(1.2);
+        }
+    }
+`
+
+export const SpanLogin2 = styled.span`
+    color: #0f6;
+    display: block;
+    font-size: 2.4rem;
+    margin:.7rem 0;
+    animation: pop 2.5s linear infinite;
+`
+
+export const LogoFooter = styled.p`
+    background-color: black;
+    color: white;
+    width: 100%;
+`
+
 
 export const CardVaga = styled.div`
 

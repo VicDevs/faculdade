@@ -1,10 +1,13 @@
 import { Link } from "react-router-dom"
 import Menu from "./../geral/Menu";
-import { Form, ParagrafoInicial, TituloLogin, BotaoGoogle, DivTextoLogin} from "../../styled";
+import {SpanLogin2 ,SpanLogin1, Form, ParagrafoInicial, TituloLogin, BotaoGoogle, DivTextoLogin} from "../../styled";
 import { useState } from "react";
+import Footer from "../geral/Footer";
 
 
 export default function Login() {
+
+  
 
   const [login, setLogin] = useState({
     'nome' : '',
@@ -42,11 +45,13 @@ export default function Login() {
           </fieldset>
           
           <DivTextoLogin>
-            <h2>Podemos colocar um texto aqui</h2>
+            <h2>Aqui as suas <SpanLogin1>Softskills</SpanLogin1> definem em qual <SpanLogin2>Nível</SpanLogin2> você está.</h2>
             
           </DivTextoLogin>
             
         </Form>
+
+        <Footer/>
       </>
     )
 }
