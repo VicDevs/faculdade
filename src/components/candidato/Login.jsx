@@ -2,7 +2,6 @@ import { Link } from "react-router-dom"
 import Menu from "./../geral/Menu";
 import {SpanLogin2 ,SpanLogin1, Form, ParagrafoInicial, TituloLogin, BotaoGoogle, DivTextoLogin} from "../../styled";
 import { useState } from "react";
-import Footer from "../geral/Footer";
 
 
 export default function Login() {
@@ -51,7 +50,6 @@ export default function Login() {
             
         </Form>
 
-        <Footer/>
       </>
     )
 }
