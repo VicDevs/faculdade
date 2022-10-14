@@ -8,5 +8,9 @@ const globalStyle = createGlobalStyle`
         box-sizing: border-box;
     }
    
+   body{
+    height: 100vh;
+    background: linear-gradient(to top, #ccc, white);
+   }
 `
 export default globalStyle

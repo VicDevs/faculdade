@@ -242,6 +242,7 @@ fieldset{
             transform: scale(1.1);
             border-color : white;
             caret-color: white;
+            background-color: #ffffff0f;
         }
     }
 
@@ -262,6 +263,7 @@ fieldset{
             transform: scale(1.1);
             border-color: white;
             cursor: pointer;
+            background-color: #ffffff0f;
         }
     }
     
@@ -427,13 +429,16 @@ export const BotaoGoogle = styled.button`
     border-radius: 2em;
     font-weight: bold;
     transition: transform .5s, box-shadow .5s;
+    overflow: hidden;
 
     :hover{
         border-color: white;
         cursor: pointer;
         transform: scale(1.1);
-        box-shadow: 2px 2px 20px black;
+        background-color: #ffffff0f;
     }
+
+    
 `
 
 export const MenuHamburguer = styled.div`
@@ -521,12 +526,20 @@ export const SpanLogin1 = styled.span`
     display: block;
     font-size: 2.4rem;
     margin:.7rem 0;
-    animation: pop 2s linear infinite;
+    animation: pop 4s reverse infinite;
+    
 
     @keyframes pop {
-        50%{
-            transform: scale(1.2);
+        25%{
+            transform: translateX(-10px);
+            
         }
+        40%{
+            color: black;
+            transform: translateX(10px);
+
+        }
+        
     }
 `
 
@@ -535,13 +548,7 @@ export const SpanLogin2 = styled.span`
     display: block;
     font-size: 2.4rem;
     margin:.7rem 0;
-    animation: pop 2.5s linear infinite;
-`
-
-export const LogoFooter = styled.p`
-    background-color: black;
-    color: white;
-    width: 100%;
+    animation: pop 4s linear infinite;
 `
 
 

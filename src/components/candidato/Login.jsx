@@ -44,12 +44,12 @@ export default function Login() {
           </fieldset>
           
           <DivTextoLogin>
-            <h2>Aqui as suas <SpanLogin1>Softskills</SpanLogin1> definem em qual <SpanLogin2>Nível</SpanLogin2> você está.</h2>
+            <h2>Aqui as suas <SpanLogin1>Softskills</SpanLogin1> definem o <SpanLogin2>Level</SpanLogin2> que você está.</h2>
             
           </DivTextoLogin>
             
         </Form>
-
-      </>
+        </>
+      
     )
 }
