@@ -4,12 +4,7 @@ import { MenuInicial, MenuHamburguer } from '../../styled';
 export default function menu() {
 
     function voltarTopo () {
-
-        let link = document.getElementsByTagName("Link")
-
-        link.addEventListener('click', ()=>{
             window.scrollTo(0,0)
-        })
     }
 
     return (
