@@ -45,7 +45,6 @@ export default function Login() {
           
           <DivTextoLogin>
             <h2>Aqui as suas <SpanLogin1>Softskills</SpanLogin1> definem o <SpanLogin2>Level</SpanLogin2> que você está.</h2>
-            
           </DivTextoLogin>
             
         </Form>

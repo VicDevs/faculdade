@@ -1,7 +1,7 @@
-import { SubtituloHome, SubtituloHome2, TituloHome } from "../../styled";
+import { HomeCandidato1, SubtituloHome, SubtituloHome2, TituloHome } from "../../styled";
 import Menu from "./../../components/geral/Menu";
 
-export default function Home() {
+export default function Home(props) {
   return (
     <>
       <Menu />

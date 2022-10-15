@@ -1,4 +1,4 @@
-import { CardVaga } from "../../styled";
+import { CardVaga, DescricaoVaga, RequisitosVaga, TituloVaga } from "../../styled";
 import Menu from "./../../components/geral/Menu";
 
 export default function Vagas() {
@@ -6,7 +6,9 @@ export default function Vagas() {
     <>
       <Menu />
       <CardVaga>
-        
+        <TituloVaga>titulo</TituloVaga>
+        <DescricaoVaga>sadasa</DescricaoVaga>
+        <RequisitosVaga>sadasd</RequisitosVaga>
       </CardVaga>
     </>
   );

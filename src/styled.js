@@ -128,6 +128,11 @@ export const MenuInicial = styled.nav`
 `
 
 export const MenuCandidato = styled.nav`
+
+position: fixed;
+height: 100vh;
+top: 0;
+width: 100%;
   ul{
     display: flex;
     list-style: none;
@@ -551,7 +556,90 @@ export const SpanLogin2 = styled.span`
     animation: pop 4s linear infinite;
 `
 
-
 export const CardVaga = styled.div`
+    border: 1px solid black;
+    width: 50%;
+    margin: 10vh auto;
+    
+`
+
+export const TituloVaga = styled.p`
+    font-weight: bold;
+    text-align: center;
+`
+
+export const DescricaoVaga = styled.p`
 
 `
+
+export const RequisitosVaga = styled.p`
+
+`
+export const SobreComp = styled.div`
+
+`
+
+export const FormVagas = styled.form`
+    
+`
+export const HomeCandidato1 = styled.p`
+    margin: 10vh 0 0 10vh;
+    color: black;
+    padding: 1.2em;
+    font-size: 2em;
+    animation: slide 2s;
+    background: linear-gradient(to right, #3f6, white);
+    animation: open 2.5s;
+    border-radius:2em 2em 0 2em;
+    white-space: nowrap;
+    font-size: 2rem;
+
+    @media (max-width: 768px) {
+        margin: 0;
+        white-space: normal;
+        margin-left: 10vh;
+    }
+
+    @keyframes open {
+        0%{
+            opacity: 0;
+            transform: translateX(100vh);
+        }
+    }
+    
+`
+
+export const HomeCandidato2 = styled.p`
+    background: linear-gradient(to left, yellow 10%, white);
+    margin: 1em 1em 0 0;
+    padding: 2em;
+    border-radius: 3em 3em 3em 0;
+    animation: slide 2.5s;
+    text-align: end;
+    white-space: nowrap;
+    font-size: 2rem;
+
+    @keyframes slide {
+        0%{
+            opacity: 0;
+            transform: translateY(-100vh);
+        }
+    }
+
+    @media (max-width:768px) {
+        white-space: normal;
+        margin-left: 10vh;
+    }
+`
+
+// export const HomeCandidato3 = styled.button`
+//     background: linear-gradient(to left, #32f 25%, white);
+//     margin:10vh auto;
+//     display: block;
+//     border-radius: 0.5rem;
+//     padding: 2em;
+//     animation: open 2.5s;
+//     font-size: 1.5rem;
+//     width: 25%;
+   
+// `
